@@ -6,9 +6,9 @@ This package comes with no warranty and I make no guarantee for its correctness.
 Remember that md2 is obsolete, so don't use this for anything else than to
 satisfy your curiosity.
 
-I have made no attempt to optimize the code. Instead, the focus has been to
-make the code resemble the algorithm as closely as possible. A run o Sum takes
-about 25000ns. Relevant tests can be found in the md2_test.go file.
+I have made no attempt to optimize the code. A run of Sum takes about 25000ns.
+Instead, the focus has been to make the code resemble the algorithm as closely
+as possible.  Relevant tests can be found in the md2_test.go file.
 
 This software is released under The MIT License (MIT) http://opensource.org/licenses/MIT.
 See LICENSE file.
