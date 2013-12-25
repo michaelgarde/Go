@@ -3,7 +3,7 @@ This Go version 1.2 package is a naive implementation of of the md2 algorithm as
 in RFC1319 (http://tools.ietf.org/html/rfc1319), for learning purposes only.
 
 This package comes with no warranty and I make no guarantee for its correctness.
-Remember that md2 is obsolete, so don't use this for anything else than to
+Remember that md2 is insecure and obsolete, so don't use this for anything else than to
 satisfy your curiosity.
 
 I have made no attempt to optimize the code. A run of Sum takes about 25000ns.
@@ -35,7 +35,7 @@ func append_padding_bytes(data []byte) []byte {
 	padLen := 16 - len(data)%16
 	var padding = make([]byte, padLen)
 
-	/* "i" bytes of value "i" are appended  to the message */
+	// "i" bytes of value "i" are appended  to the message
 	for i := 0; i < padLen; i++ {
 		padding[i] = byte(padLen)
 	}
